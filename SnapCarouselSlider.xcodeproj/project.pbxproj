@@ -11,6 +11,9 @@
 		EA558A592ABFFE7000510E04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA558A582ABFFE7000510E04 /* ContentView.swift */; };
 		EA558A5B2ABFFE7300510E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA558A5A2ABFFE7300510E04 /* Assets.xcassets */; };
 		EA558A5E2ABFFE7300510E04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA558A5D2ABFFE7300510E04 /* Preview Assets.xcassets */; };
+		EA558A652ABFFEA000510E04 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA558A642ABFFEA000510E04 /* Home.swift */; };
+		EA558A672ABFFFE700510E04 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA558A662ABFFFE700510E04 /* SnapCarousel.swift */; };
+		EA558A692AC000FB00510E04 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA558A682AC000FB00510E04 /* OnboardingItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		EA558A582ABFFE7000510E04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA558A5A2ABFFE7300510E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA558A5D2ABFFE7300510E04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA558A642ABFFEA000510E04 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EA558A662ABFFFE700510E04 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		EA558A682AC000FB00510E04 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		EA558A552ABFFE7000510E04 /* SnapCarouselSlider */ = {
 			isa = PBXGroup;
 			children = (
+				EA558A642ABFFEA000510E04 /* Home.swift */,
 				EA558A562ABFFE7000510E04 /* SnapCarouselSliderApp.swift */,
 				EA558A582ABFFE7000510E04 /* ContentView.swift */,
 				EA558A5A2ABFFE7300510E04 /* Assets.xcassets */,
 				EA558A5C2ABFFE7300510E04 /* Preview Content */,
+				EA558A662ABFFFE700510E04 /* SnapCarousel.swift */,
+				EA558A682AC000FB00510E04 /* OnboardingItem.swift */,
 			);
 			path = SnapCarouselSlider;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA558A592ABFFE7000510E04 /* ContentView.swift in Sources */,
+				EA558A672ABFFFE700510E04 /* SnapCarousel.swift in Sources */,
+				EA558A692AC000FB00510E04 /* OnboardingItem.swift in Sources */,
+				EA558A652ABFFEA000510E04 /* Home.swift in Sources */,
 				EA558A572ABFFE7000510E04 /* SnapCarouselSliderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

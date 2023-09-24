@@ -2,7 +2,7 @@
 //  Home.swift
 //  SnapCarouselSlider
 //
-//  Created by Aleph-9Q05D on 24/09/23.
+//  Created by Vebby Clarissa on 24/09/23.
 //
 
 import SwiftUI
@@ -13,42 +13,22 @@ struct Home: View {
     @State var items: [OnboardingItem] = []
     
     var body: some View {
-        VStack(spacing: 15 ) {
-            VStack(alignment: .leading, spacing: 12) {
-                Button {
-                    
-                } label: {
-                    Label {
-                        Text ("Back")
-                    } icon: {
-                        Image (systemName: "chevron.left")
-                            .font(.title2.bold())
-                    }
-                    .foregroundColor(.primary)
-                }
-                
-                Text("My Wishes")
-                    .font(.title)
-                    .fontWeight(.black)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding()
-            
+        VStack(spacing: 16 ) {
             //Snap carousel here
-            SnapCarousel(index: $currentIndex, items: items,spacing: 13, trailingSpace: 50, isFirstItemCentered: true) { item in
-                Image(item.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: .infinity, height: 500)
-                    .cornerRadius(12)
-//                GeometryReader { proxy in
-//                    let size = proxy.size
-//
-//
-//                }
+            SnapCarousel(index: $currentIndex, items: items) { item, isFocused  in
+                GeometryReader { proxy in
+                    let size = proxy.size
+                    Image(item.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: 500)
+                        .cornerRadius(12)
+                        .scaleEffect(isFocused ? 1.1 : 1)
+                }
                 
             }
             .padding(.vertical, 80)
+            Spacer()
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .onAppear {

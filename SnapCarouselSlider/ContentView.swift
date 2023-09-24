@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SnapCarouselSlider
 //
-//  Created by Aleph-9Q05D on 24/09/23.
+//  Created by Vebby Clarissa on 24/09/23.
 //
 
 import SwiftUI
